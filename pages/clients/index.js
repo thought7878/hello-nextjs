@@ -7,16 +7,20 @@ export default function ClientListPage() {
   console.log("router.pathname:", router.pathname);
   console.log("router.query:", router.query);
 
+  const clients = [
+    { id: "1", name: "client1" },
+    { id: "2", name: "client2" },
+  ];
+
   return (
     <div>
       <h1>Client List Page</h1>
       <ul>
-        <li>
-          <Link href={`/clients/client1`}>client1</Link>
-        </li>
-        <li>
-          <Link href={`/clients/client2`}>client2</Link>
-        </li>
+        {clients.map((c) => (
+          <li key={c.id}>
+            <Link href={`/clients/${c.id}`}>{c.name}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   );
