@@ -4,8 +4,8 @@ import { useRouter } from "next/router";
 export default function ClientListPage() {
   const router = useRouter();
 
-  console.log("router.pathname:", router.pathname);
-  console.log("router.query:", router.query);
+  //   console.log("router.pathname:", router.pathname);
+  //   console.log("router.query:", router.query);
 
   const clients = [
     { id: "1", name: "client1" },

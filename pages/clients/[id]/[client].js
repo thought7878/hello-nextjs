@@ -5,5 +5,5 @@ export default function ClientDetailPage() {
   console.log("router.pathname:", router.pathname);
   console.log("router.query:", router.query);
 
-  return <div>Client Detail Page</div>;
+  return <div>Client index brother Page</div>;
 }
