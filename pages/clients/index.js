@@ -18,7 +18,10 @@ export default function ClientListPage() {
       <ul>
         {clients.map((c) => (
           <li key={c.id}>
-            <Link href={`/clients/${c.id}`}>{c.name}</Link>
+            {/* <Link href={`/clients/${c.id}`}>{c.name}</Link> */}
+            <Link href={{ pathname: "/clients/[id]", query: { id: c.id } }}>
+              {c.name}
+            </Link>
           </li>
         ))}
       </ul>

@@ -5,5 +5,5 @@ export default function ClientListPage() {
   console.log("router.pathname:", router.pathname);
   console.log("router.query:", router.query);
 
-  return <div>Client Page</div>;
+  return <div>Client index Page. client id:{router.query.id}</div>;
 }
